@@ -26,19 +26,19 @@ Partial Class Form1
         Me.RTBDisplay = New System.Windows.Forms.RichTextBox()
         Me.btBrowse = New System.Windows.Forms.Button()
         Me.RTBUser = New System.Windows.Forms.RichTextBox()
-        Me.btSubmit = New System.Windows.Forms.Button()
         Me.txtFileName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtWPM = New System.Windows.Forms.TextBox()
         Me.lblMin = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblSec = New System.Windows.Forms.Label()
-        Me.btStart = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lblWPM = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.lblScore = New System.Windows.Forms.Label()
+        Me.btStart = New System.Windows.Forms.Button()
+        Me.btSubmit = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -55,7 +55,7 @@ Partial Class Form1
         '
         'btBrowse
         '
-        Me.btBrowse.Location = New System.Drawing.Point(826, 169)
+        Me.btBrowse.Location = New System.Drawing.Point(825, 27)
         Me.btBrowse.Name = "btBrowse"
         Me.btBrowse.Size = New System.Drawing.Size(71, 24)
         Me.btBrowse.TabIndex = 1
@@ -71,18 +71,9 @@ Partial Class Form1
         Me.RTBUser.TabIndex = 2
         Me.RTBUser.Text = ""
         '
-        'btSubmit
-        '
-        Me.btSubmit.Location = New System.Drawing.Point(882, 348)
-        Me.btSubmit.Name = "btSubmit"
-        Me.btSubmit.Size = New System.Drawing.Size(75, 23)
-        Me.btSubmit.TabIndex = 3
-        Me.btSubmit.Text = "Submit"
-        Me.btSubmit.UseVisualStyleBackColor = True
-        '
         'txtFileName
         '
-        Me.txtFileName.Location = New System.Drawing.Point(904, 176)
+        Me.txtFileName.Location = New System.Drawing.Point(912, 30)
         Me.txtFileName.Name = "txtFileName"
         Me.txtFileName.ReadOnly = True
         Me.txtFileName.Size = New System.Drawing.Size(211, 20)
@@ -91,7 +82,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(883, 218)
+        Me.Label1.Location = New System.Drawing.Point(822, 69)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(78, 13)
         Me.Label1.TabIndex = 5
@@ -99,7 +90,7 @@ Partial Class Form1
         '
         'txtWPM
         '
-        Me.txtWPM.Location = New System.Drawing.Point(963, 211)
+        Me.txtWPM.Location = New System.Drawing.Point(912, 66)
         Me.txtWPM.Name = "txtWPM"
         Me.txtWPM.Size = New System.Drawing.Size(100, 20)
         Me.txtWPM.TabIndex = 6
@@ -107,7 +98,7 @@ Partial Class Form1
         'lblMin
         '
         Me.lblMin.AutoSize = True
-        Me.lblMin.Location = New System.Drawing.Point(944, 260)
+        Me.lblMin.Location = New System.Drawing.Point(1042, 69)
         Me.lblMin.Name = "lblMin"
         Me.lblMin.Size = New System.Drawing.Size(19, 13)
         Me.lblMin.TabIndex = 7
@@ -116,7 +107,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(960, 260)
+        Me.Label2.Location = New System.Drawing.Point(1058, 69)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(10, 13)
         Me.Label2.TabIndex = 8
@@ -125,20 +116,11 @@ Partial Class Form1
         'lblSec
         '
         Me.lblSec.AutoSize = True
-        Me.lblSec.Location = New System.Drawing.Point(969, 260)
+        Me.lblSec.Location = New System.Drawing.Point(1067, 69)
         Me.lblSec.Name = "lblSec"
         Me.lblSec.Size = New System.Drawing.Size(19, 13)
         Me.lblSec.TabIndex = 9
         Me.lblSec.Text = "00"
-        '
-        'btStart
-        '
-        Me.btStart.Location = New System.Drawing.Point(882, 298)
-        Me.btStart.Name = "btStart"
-        Me.btStart.Size = New System.Drawing.Size(75, 23)
-        Me.btStart.TabIndex = 10
-        Me.btStart.Text = "Start"
-        Me.btStart.UseVisualStyleBackColor = True
         '
         'Timer1
         '
@@ -147,9 +129,9 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.lblWPM)
-        Me.GroupBox1.Location = New System.Drawing.Point(886, 386)
+        Me.GroupBox1.Location = New System.Drawing.Point(825, 108)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox1.Size = New System.Drawing.Size(142, 100)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "WPM"
@@ -158,7 +140,7 @@ Partial Class Form1
         '
         Me.lblWPM.AutoSize = True
         Me.lblWPM.Font = New System.Drawing.Font("Microsoft Sans Serif", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWPM.Location = New System.Drawing.Point(68, 28)
+        Me.lblWPM.Location = New System.Drawing.Point(35, 26)
         Me.lblWPM.Name = "lblWPM"
         Me.lblWPM.Size = New System.Drawing.Size(70, 51)
         Me.lblWPM.TabIndex = 0
@@ -168,9 +150,9 @@ Partial Class Form1
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.lblScore)
-        Me.GroupBox2.Location = New System.Drawing.Point(886, 492)
+        Me.GroupBox2.Location = New System.Drawing.Point(983, 108)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(200, 102)
+        Me.GroupBox2.Size = New System.Drawing.Size(140, 100)
         Me.GroupBox2.TabIndex = 12
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Score"
@@ -179,18 +161,36 @@ Partial Class Form1
         '
         Me.lblScore.AutoSize = True
         Me.lblScore.Font = New System.Drawing.Font("Microsoft Sans Serif", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblScore.Location = New System.Drawing.Point(68, 28)
+        Me.lblScore.Location = New System.Drawing.Point(34, 29)
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(70, 51)
         Me.lblScore.TabIndex = 0
         Me.lblScore.Text = "00"
         Me.lblScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btStart
+        '
+        Me.btStart.Image = Global.VBHCI.My.Resources.Resources.power_button
+        Me.btStart.Location = New System.Drawing.Point(897, 229)
+        Me.btStart.Name = "btStart"
+        Me.btStart.Size = New System.Drawing.Size(152, 152)
+        Me.btStart.TabIndex = 10
+        Me.btStart.UseVisualStyleBackColor = True
+        '
+        'btSubmit
+        '
+        Me.btSubmit.Image = Global.VBHCI.My.Resources.Resources.sent
+        Me.btSubmit.Location = New System.Drawing.Point(930, 398)
+        Me.btSubmit.Name = "btSubmit"
+        Me.btSubmit.Size = New System.Drawing.Size(82, 76)
+        Me.btSubmit.TabIndex = 3
+        Me.btSubmit.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1162, 681)
+        Me.ClientSize = New System.Drawing.Size(1140, 596)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btStart)
